@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useAuth } from "../contexts/AuthContext";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom"; // Removed Link because unused
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -74,7 +74,7 @@ export default function Login() {
           </button>
         </p>
 
-        {/* Separator (ONLY ONE KEY NOW) */}
+        {/* Fixed Separator */}
         <div style={styles.separator}>
           <span style={styles.separatorText}>or</span>
         </div>
@@ -123,7 +123,6 @@ export default function Login() {
         </div>
       </div>
 
-      {/* Signup section */}
       <div style={styles.newToAmazon}>
         <div style={styles.newSeparator}>
           <span style={styles.newSeparatorText}>New to Amazon?</span>
@@ -224,15 +223,12 @@ const styles = {
     fontSize: "12px",
     padding: 0,
   },
-
-  /* FIXED: ONLY ONE separator + separatorText */
   separator: {
     position: "relative",
     textAlign: "center",
     margin: "20px 0",
     borderTop: "1px solid #e7e7e7",
   },
-
   separatorText: {
     position: "absolute",
     top: "-8px",
@@ -243,7 +239,6 @@ const styles = {
     fontSize: "12px",
     color: "#767676",
   },
-
   googleButton: {
     width: "100%",
     backgroundColor: "#fff",
