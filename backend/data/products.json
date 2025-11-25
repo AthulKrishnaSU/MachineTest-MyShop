@@ -1,0 +1,102 @@
+[
+  {
+    "id": "1764043349353",
+    "title": "Test Product",
+    "price": "1000",
+    "image": "https://via.placeholder.com/150",
+    "description": "Test description",
+    "reviews": []
+  },
+  {
+    "id": "1764043741554",
+    "title": "Test Product 2",
+    "price": "1000",
+    "image": "https://via.placeholder.com/150",
+    "description": "Test description",
+    "reviews": []
+  },
+  {
+    "id": "1764043957988",
+    "title": "Test Product 3",
+    "price": "1000",
+    "image": "https://via.placeholder.com/150",
+    "description": "Test description",
+    "reviews": []
+  },
+  {
+    "id": "1764044031041",
+    "title": "Test Product 4",
+    "price": "1000",
+    "image": "https://via.placeholder.com/150",
+    "description": "Test description",
+    "reviews": []
+  },
+  {
+    "id": "1764044079160",
+    "title": "Test Product 4",
+    "price": "1000",
+    "image": "https://via.placeholder.com/150",
+    "description": "Test description",
+    "reviews": []
+  },
+  {
+    "id": "1764044438795",
+    "title": "Test Product 4",
+    "price": "1000",
+    "image": "https://via.placeholder.com/150",
+    "description": "Test description",
+    "reviews": []
+  },
+  {
+    "id": "1764044522593",
+    "title": "Test Product 4",
+    "price": "1000",
+    "image": "https://via.placeholder.com/150",
+    "description": "Test description",
+    "reviews": []
+  },
+  {
+    "id": "1764044593416",
+    "title": "Wireless Headphones",
+    "price": "1999",
+    "image": "https://via.placeholder.com/240",
+    "description": "Comfortable wireless headphones with long battery life.",
+    "reviews": []
+  },
+  {
+    "id": "1764045137646",
+    "title": "Wire",
+    "price": "1999",
+    "image": "https://via.placeholder.com/240",
+    "description": "Comfortable wireless headphones with long battery life.",
+    "category": "Electronics",
+    "reviews": []
+  },
+  {
+    "id": "1764045958361",
+    "title": "battery",
+    "price": "1999",
+    "image": "https://via.placeholder.com/240",
+    "description": "Comfortable wireless headphones with long battery life.",
+    "category": "Electronics",
+    "reviews": []
+  },
+  {
+    "id": "1764046369331",
+    "title": "Phone",
+    "price": "1999",
+    "image": "https://via.placeholder.com/240",
+    "description": "Comfortable wireless headphones with long battery life.",
+    "category": "Electronics",
+    "reviews": []
+  },
+  {
+    "id": "1764052543343",
+    "title": "Redmi",
+    "price": "1999",
+    "image": "https://via.placeholder.com/240",
+    "description": "Comfortable wireless headphones with long battery life.",
+    "category": "Electronics",
+    "reviews": []
+  }
+]
