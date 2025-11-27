@@ -111,6 +111,16 @@ const products = [
     image: "https://m.media-amazon.com/images/I/41eFUZh+nHL._AC_UF1000,1000_QL80_.jpg",
     description: "1TB external hard drive for storage.",
     reviews: []
+  },
+   {
+    id: "14",
+    title: "Realme",
+    price: 24999,
+    category: "Electronics",
+    image: "https://m.media-amazon.com/images/I/41Xhb2WaWSL._SY300_SX300_QL70_FMwebp_.jpg",
+  
+    description: "Realme Phone",
+    reviews: []
   }
 ];
 

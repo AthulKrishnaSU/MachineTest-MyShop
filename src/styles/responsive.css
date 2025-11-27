@@ -1,0 +1,136 @@
+/* Home page responsive rules */
+
+/* Base (mobile-first) */
+.home-page {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* Make container center + responsive (if you also use .container globally, these are safe) */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header */
+.welcome-heading {
+  font-size: 1.2rem;
+  margin: 12px 0;
+}
+
+/* Search area */
+.search-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 10px auto;
+  display: flex;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 2px solid #febd69;
+}
+
+/* increase touch target on mobile */
+.search-input {
+  font-size: 1rem;
+  padding: 12px 14px;
+}
+
+.search-button {
+  width: 56px;
+  min-width: 56px;
+  font-size: 20px;
+  background-color: #febd69;
+  border: none;
+  cursor: pointer;
+}
+
+/* Filters */
+.filter-box {
+  display: flex;
+  gap: 10px;
+  margin: 18px auto;
+  max-width: 100%;
+  justify-content: center;
+  flex-wrap: wrap; /* allow wrapping on small screens */
+}
+
+.dropdown {
+  padding: 10px;
+  font-size: 0.95rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  min-width: 140px;
+}
+
+/* Product grid */
+.product-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* Responsive tweaks */
+
+/* Small phones */
+@media (max-width: 480px) {
+  .welcome-heading {
+    font-size: 1.05rem;
+  }
+  .search-container {
+    max-width: 100%;
+  }
+  .dropdown {
+    min-width: 100%;
+    width: 100%;
+  }
+  .filter-box {
+    gap: 8px;
+    padding: 0 8px;
+  }
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .search-button {
+    width: 48px;
+  }
+}
+
+/* Small tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .welcome-heading {
+    font-size: 1.15rem;
+  }
+  .dropdown {
+    min-width: 160px;
+  }
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Medium screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .search-container {
+    max-width: 720px;
+  }
+  .filter-box {
+    max-width: 720px;
+  }
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Desktop large */
+@media (min-width: 1200px) {
+  .home-page {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}

@@ -13,7 +13,11 @@ import PaymentMethod from "./pages/PaymentMethod";
 import PaymentGateway from "./pages/PaymentGateway";
 import OrderConfirmation from "./pages/OrderConfirmation";
 import Orders from "./pages/Orders";
-import AddProduct from "./pages/AddProduct"; // ✅ import AddProduct
+import AddProduct from "./pages/AddProduct"; 
+
+import "./styles/responsive.css";
+import UploadProducts from "./pages/UploadProducts";
+import UploadOrders from "./pages/UploadOrders";
 
 export default function App() {
   return (
@@ -34,8 +38,11 @@ export default function App() {
               <Route path="/order-confirmation" element={<OrderConfirmation />} />
               <Route path="/orders" element={<Orders />} />
 
-              {/* ✅ New route for AddProduct */}
+              
               <Route path="/add-product" element={<AddProduct />} />
+              <Route path="/upload-products" element={<UploadProducts />} />
+              <Route path="/upload-orders" element={<UploadOrders />} />
+
             </Routes>
           </div>
         </CartProvider>

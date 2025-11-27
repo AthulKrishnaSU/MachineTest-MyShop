@@ -3,6 +3,8 @@ import { useCart } from "../contexts/CartContext";
 import { useAuth } from "../contexts/AuthContext";
 import { useNavigate } from "react-router-dom";
 
+
+
 export default function Checkout(){
   const { cart, total } = useCart();
   const { user } = useAuth();

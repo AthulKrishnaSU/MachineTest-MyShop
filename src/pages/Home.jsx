@@ -14,7 +14,7 @@ export default function Home() {
   // Filter products safely
   const filteredProducts = products.filter((p) => {
     const productPrice = Number(p.price); // convert to number
-    const productRating = p.rating || 0;  // default rating if missing
+    const productRating = p.rating || 0; // default rating if missing
 
     // Price filter
     let priceMatch = true;
@@ -36,22 +36,27 @@ export default function Home() {
   });
 
   return (
-    <div style={{ padding: 20 }}>
-      <h2>Welcome {user ? user.email : "to My Shop"}</h2>
+    <div className="home-page container" style={{ padding: 20 }}>
+      <h2 className="welcome-heading">Welcome {user ? user.email : "to My Shop"}</h2>
 
-      <div style={styles.searchContainer}>
+      <div
+        className="search-container"
+        style={styles.searchContainer}
+      >
         <input
+          className="search-input"
           style={styles.searchInput}
           type="text"
           placeholder="Search for products..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
-        <button style={styles.searchButton}>🔍</button>
+        <button className="search-button" style={styles.searchButton}>🔍</button>
       </div>
 
-      <div style={styles.amazonFilterBox}>
+      <div className="filter-box" style={styles.amazonFilterBox}>
         <select
+          className="dropdown"
           style={styles.amazonDropdown}
           value={category}
           onChange={(e) => setCategory(e.target.value)}
@@ -64,6 +69,7 @@ export default function Home() {
         </select>
 
         <select
+          className="dropdown"
           style={styles.amazonDropdown}
           value={price}
           onChange={(e) => setPrice(e.target.value)}
@@ -76,6 +82,7 @@ export default function Home() {
         </select>
 
         <select
+          className="dropdown"
           style={styles.amazonDropdown}
           value={rating}
           onChange={(e) => setRating(e.target.value)}
@@ -88,6 +95,7 @@ export default function Home() {
       </div>
 
       <div
+        className="product-grid"
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
@@ -141,6 +149,4 @@ const styles = {
     cursor: "pointer",
   },
 };
-
-
 
